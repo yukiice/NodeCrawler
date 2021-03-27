@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": [
+      "dom",
+      "es6",
+      "es2017",
+      "esnext.asynciterable"
+    ],
+    "sourceMap": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    // 删除注释
+    "removeComments": true,
+    "noImplicitAny": true,
+    // null 和 undefinded不能赋予
+    "strictNullChecks": false,
+    // 函数参数双向协变检查
+    "strictFunctionTypes": false,
+    // 当this表达式的值为一个any类型的时候，生成一个错误
+    "noImplicitThis": false,
+    // 检查是否有定义了但没有使用
+    "noUnusedLocals": false,
+    // 用于检查函数中没有使用的参数
+    "noUnusedParameters": false,
+    // 用于检查有没有返回值
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    // typeorm需要开启的两个参数
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "baseUrl": "."
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./src/**/*.tsx",
+    "./src/**/*.ts"
+  ]
+}
